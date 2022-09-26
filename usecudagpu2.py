@@ -1,4 +1,5 @@
 import sys, re
+import os
 
 import torch.cuda
 from torch import no_grad, LongTensor
@@ -153,8 +154,9 @@ if __name__ == '__main__':
     utils.load_checkpoint(model, net_g_ms)
     
     while True:
-        txt_path = input('Path of a txt file: ')
-        output_path = input('Path of a Output: ')
+        txt_path = input("Path of a txt file: ")
+        output_path = input("Path of a Output(eg:/content/drive/MyDrive/wavflies_output/text1): ")
+        os.mkdir(output_path)
 
         class_from_txt_list =  my_get_txtflie(txt_path)
         class_get_loss_list = []
