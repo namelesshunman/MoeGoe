@@ -154,8 +154,8 @@ if __name__ == '__main__':
     utils.load_checkpoint(model, net_g_ms)
     
     while True:
-        txt_path = input("Path of a txt file: ")
-        output_path = input("Path of a Output(eg:/content/drive/MyDrive/wavflies_output/text1): ")
+        txt_path = input("Input path of a txt file(eg:/content/MoeGoe/txtfile_example/txt_example.txt): ")
+        output_path = input("Input path of a Output(eg:/content/drive/MyDrive/wavflies_output/text1): ")
         os.mkdir(output_path)
 
         class_from_txt_list =  my_get_txtflie(txt_path)
@@ -164,7 +164,7 @@ if __name__ == '__main__':
         # output_path = "E:\Voice_Maker_Output\keifa"
         file_number = 1
 
-        flag = input("Do you want to set start number of wav file?y or n:")
+        flag = input("Do you want to set start number of wav file?y or n(if you don't want to set,input n):")
         if flag == "y":
             set_number = input('wav file start number: ')
             try:
@@ -198,6 +198,7 @@ if __name__ == '__main__':
                     class_file_loss2 = my_class(class_loss.seq, class_loss.text, class_loss.filenumber)
                     class_get_loss_list.append(class_file_loss2)
 
+        print("wavfiles generated in: " + output_path)
         print("Voice Generated Sucessful")
         ask_if_continue()
 
