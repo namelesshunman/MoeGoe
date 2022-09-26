@@ -155,7 +155,7 @@ if __name__ == '__main__':
     
     while True:
         txt_path = input("Input path of a txt file(eg:/content/MoeGoe/txtfile_example/txt_example.txt): ")
-        output_path = input("Input path of a Output(eg:/content/drive/MyDrive/wavflies_output/text1): ")
+        output_path = input("Input path of a Output(eg:/content/drive/MyDrive/wavflies_output/text1/): ")
         os.mkdir(output_path)
 
         class_from_txt_list =  my_get_txtflie(txt_path)
