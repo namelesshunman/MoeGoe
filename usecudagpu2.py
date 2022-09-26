@@ -131,8 +131,8 @@ def my_voice_maker(character_seq, text, output_path):
 if __name__ == '__main__':
     # model = input('Path of a VITS model: ')
     # config = input('Path of a config file: ')
-    model = "/root/Vits_From_Jiutian/koihime_vits_1081/G.pth"
-    config = "/root/Vits_From_Jiutian/koihime_vits_1081/config.json"
+    model = "/content/MoeGoe/config/932_koihime_vits.pth"
+    config = "/content/MoeGoe/config/932_config.json"
     # txt_path = input('Path of a txt file: ')
     # output_path = input('Path of a Output: ')
 
