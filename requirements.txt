@@ -1,8 +1,8 @@
 numba
 librosa
-numpy==1.22.0
+numpy==1.21.4
 scipy
 torch
 Unidecode
-openjtalk>=0.3.0.dev2
+pyopenjtalk==0.2.0
 jamo
